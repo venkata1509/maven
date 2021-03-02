@@ -2,7 +2,7 @@ pipeline {
     agent any
     
     tools {
-        maven 'apache-maven-3.6.3' 
+        maven  'my-maven-3'
     }
     
     stages {
@@ -18,8 +18,7 @@ pipeline {
 				sh 'mvn clean verify -DskipITs=true';
 		      	junit '**/target/surefire-reports/TEST-*.xml'
 		      	archiveArtifacts  'target/*.jar'
-
-	      }
+			}
    	    }
 	
 	   stage ('Integration Test'){
@@ -30,4 +29,4 @@ pipeline {
       		}
         }	
     }
-  }
+}
