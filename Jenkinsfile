@@ -7,11 +7,11 @@ pipeline {
     
     stages {
     	 
-	   stage ('Clone') {
-            steps {
-                git branch: 'master', url: "https://github.com/abdallawi/07-jenkins-maven-plugin-01-unit-and-integration-tests.git"
-            }
-	    }
+	//    stage ('Clone') {
+    //         steps {
+    //             git branch: 'master', url: "https://github.com/abdallawi/07-jenkins-maven-plugin-01-unit-and-integration-tests.git"
+    //         }
+	//     }
 	 
 	   stage ('Build & Unit test'){
 		    steps {
