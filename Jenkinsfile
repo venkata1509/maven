@@ -9,7 +9,7 @@ pipeline {
     	 
 	   stage ('Clone') {
             steps {
-                git branch: 'master', url: "https://gitlab.com/mromdhani/07-jenkins-maven-plugin-01-unit-and-integration-tests.git"
+                git branch: 'master', url: "https://github.com/abdallawi/07-jenkins-maven-plugin-01-unit-and-integration-tests.git"
             }
 	    }
 	 
